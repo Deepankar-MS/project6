@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project6"
+version = "1.0.0"
+description = "Advanced multi-project integration - depends on project5 and project3"
+requires-python = ">=3.8"
+dependencies = ["project5", "project3", "project2", "project1"]
+
+[tool.setuptools]
+packages = ["project6"]
+package-dir = {"project6" = "."}
